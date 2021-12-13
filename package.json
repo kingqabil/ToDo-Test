@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Testing With Jest Framework",
   "private": true,
-  "jest":{
+  "jest": {
+    "collectCoverage": true,
+    "verbose": true,
+    "reporters":["./node_modules/jest-html-reporter"],
     "testEnvironment": "jsdom"
-},
+  },
   "scripts": {
     "test": "jest --coverage",
     "start": "webpack serve --open",
@@ -36,6 +39,7 @@
     "hint": "^6.1.9",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.4.4",
+    "jest-html-reporter": "^3.4.2",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
