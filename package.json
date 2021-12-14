@@ -6,6 +6,7 @@
   "jest": {
     "collectCoverage": true,
     "verbose": true,
+    "coverageReporters":["clover", "json", "lcov", "text"],
     "reporters": [
       "./node_modules/jest-html-reporter"
     ],
